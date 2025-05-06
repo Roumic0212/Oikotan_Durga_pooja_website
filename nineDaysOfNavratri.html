@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nine Days of Navratri</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg nav-bg fixed-top" data-bs-theme="dark">
+      <div class="container-fluid">
+        <div class="logo-wrapper">
+          <!-- Image for Logo -->
+          <a href="./index.html">
+            <img
+              src="./images/oikotan_logo.png"
+              alt="Logo"
+              class="top-left-logo"
+            />
+          </a>
+          <!-- Text Below the Logo -->
+          <!-- <a class="navbar-brand typing-demo" href="#">
+            Oikotan Hebbal<br />
+            Cultural Society
+          </a> -->
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-md-center"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav col-lg-11 justify-content-lg-around">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Pujos
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./durgaPuja.html"
+                    >Durga Puja</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./kaliPuja.html">Kali Puja</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./lakshmiPuja.html"
+                    >Lakshmi Puja</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./saraswatiPuja.html"
+                    >Saraswati Puja</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./know_more.html"
+                    >Know more about Pujo</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown active">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Events
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./durgotsav.html"
+                    >Oikotan Durgotsav</a
+                  >
+                  <a class="dropdown-item" href="./picnic.html"
+                    >Oikotan Picnic</a
+                  >
+                  <a class="dropdown-item" href="./poilaboishak.html"
+                    >Poila Boishak</a
+                  >
+                  <!-- <a class="dropdown-item" href="./sportsday.html">Sports Day</a> -->
+                  <a class="dropdown-item" href="./holi.html"
+                    >Holi celebration</a
+                  >
+                  <a class="dropdown-item" href="./practice.html"
+                    >Fun Agomoni & Natok Practice</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contactUs.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./disha.html">DISHA</a>
+            </li>
+            <!-- Social Media Icons -->
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.facebook.com/OikotanHebbal"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <i class="bi bi-facebook"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.instagram.com/oikotanhebbal/?hl=en"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.youtube.com/@OikotanInHebbal"
+                target="_blank"
+                aria-label="YouTube"
+              >
+                <i class="bi bi-youtube"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://maps.app.goo.gl/6czUXna1dh67vpkn9"
+                target="_blank"
+                aria-label="GoogleMaps"
+              >
+                <i class="bi bi-geo-alt-fill"></i>
+              </a>
+            </li>
+
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li> -->
+            <li class="nav-item dropdown">
+              <button
+                class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
+                id="bd-theme"
+                type="button"
+                aria-expanded="false"
+                data-bs-toggle="dropdown"
+                data-bs-display="static"
+                aria-label="Toggle theme (light)"
+              >
+                <i class="bi bi-brightness-high"></i>
+                <span class="d-lg-none ms-2" id="bd-theme-text"
+                  >Toggle theme</span
+                >
+              </button>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="bd-theme-text"
+              >
+                <li>
+                  <button
+                    id="light"
+                    type="button"
+                    class="dropdown-item d-flex align-items-center"
+                    data-bs-theme-value="light"
+                    aria-pressed="true"
+                    onclick="inverter('light')"
+                  >
+                    <i class="bi bi-brightness-high"></i>
+                    Light
+                  </button>
+                </li>
+                <li>
+                  <button
+                    id="dark"
+                    type="button"
+                    class="dropdown-item d-flex align-items-center"
+                    onclick="inverter('dark')"
+                    data-bs-theme-value="dark"
+                    aria-pressed="false"
+                  >
+                    <i class="bi bi-moon-stars-fill"></i>
+                    Dark
+                  </button>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- nine days -->
+    <div class="album py-5 bg-body-primary hid">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <img src="./images/shailputri.jpg" alt="" class="card-img-top" />
+              <div class="card-body">
+                <h3 class="card-title">First day</h3>
+                <p class="card-text">
+                  The first day of Navratri Pooja is devoted to Shailputri.
+                  Goddess Shailputri is daughter of Himalayas. She is a form of
+                  Mata Shakti (Goddess of Power) and spouse of Lord Shiva.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <img
+                src="./images/brahmacharini.jpg"
+                alt=""
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Second day</h3>
+                <p class="card-text">
+                  On the second day of Navratri Goddess Brahmacharini is
+                  worshipped in homes and temples. The word 'Brahmcharini' is
+                  derivative of the word Brahma, which stands for Tapa
+                  (Penance). This form of mata Shakti is close to Uma or
+                  Parvati.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <img
+                src="./images/chandraghanta.jpg"
+                alt=""
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Third day</h3>
+                <p class="card-text">
+                  Goddess Chandraghanta is worshipped on the third day of
+                  Navratri. She is considered to be Goddess of beauty and
+                  bravery.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <img src="./images/kushmanda.jpg" alt="" class="card-img-top" />
+              <div class="card-body">
+                <h3 class="card-title">Fourth day</h3>
+                <p class="card-text">
+                  The form of Mata Shakti which is worshipped fourth day of
+                  Navratri is Kushmanda. As per Hindu mythology, it is
+                  considered that the Goddess Kushmanda has originated this
+                  entire Universe by her laugh.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <img src="./images/skandmata.jpg" alt="" class="card-img-top" />
+              <div class="card-body">
+                <h3 class="card-title">Fifth day</h3>
+                <p class="card-text">
+                  Devotees worship Skand Mata on the fifth day of Navratri.
+                  Skanda is chief warrior of God's army and Goddess is mother of
+                  Skanda that is why the Goddess is called Skand Mata.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <img src="./images/katyayni.jpg" alt="" class="card-img-top" />
+              <div class="card-body">
+                <h3 class="card-title">Sixth day</h3>
+                <p class="card-text">
+                  Sixth day of Navratri is intended for Devi Katyayani. In her
+                  typical image, the goddess Katyayani seated on lion and has
+                  tree eyes and four legs.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <img src="./images/kalratri.jpg" alt="" class="card-img-top" />
+              <div class="card-body">
+                <h3 class="card-title">Seventh day</h3>
+                <p class="card-text">
+                  On the seventh day of Navratri festival, devotees worship and
+                  adore the Goddess Kalratri. As name indicates Devi Kalratri is
+                  as black as a dark night and she is notorious to eliminate
+                  fear from her devotee's heart.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <img src="./images/mahagauri.jpg" alt="" class="card-img-top" />
+              <div class="card-body">
+                <h3 class="card-title">Eighth day</h3>
+                <p class="card-text">
+                  Maha Gauri is the form of Mother Durga which is worshipped on
+                  eighth day of Navratri. The Goddess Maha Gauri signifies
+                  calmness and endorses wisdom. As name suggest, she is
+                  considered enormously beautiful. Her color is like snow and
+                  adorned with white colored jewelries.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <img src="./images/siddhidatri.jpg" alt="" class="card-img-top" />
+              <div class="card-body">
+                <h3 class="card-title">Ninth day</h3>
+                <p class="card-text">
+                  Ninth form of the Goddess Durga, Siddhidatri is worshiped on
+                  the ninth day of Navratri. She is Goddess of all eight siddhis
+                  and is worshipped by all Yogis, Sadhakas, Siddhas and
+                  RIshis-Munis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <script src="./index.js"></script>
+    <script
+      src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

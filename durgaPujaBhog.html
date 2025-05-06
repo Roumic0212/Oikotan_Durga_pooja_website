@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>durgaPujaBhog</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <!-- navbar -->
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg nav-bg fixed-top" data-bs-theme="dark">
+    <div class="container-fluid">
+      <div class="logo-wrapper">
+        <!-- Image for Logo -->
+        <a href="./index.html">
+          <img
+            src="./images/oikotan_logo.png"
+            alt="Logo"
+            class="top-left-logo"
+          />
+        </a>
+        <!-- Text Below the Logo -->
+        <!-- <a class="navbar-brand typing-demo" href="#">
+            Oikotan Hebbal<br />
+            Cultural Society
+          </a> -->
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-md-center"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav col-lg-11 justify-content-lg-around">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Pujos
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="./durgaPuja.html">Durga Puja</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./kaliPuja.html">Kali Puja</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./lakshmiPuja.html"
+                  >Lakshmi Puja</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./saraswatiPuja.html"
+                  >Saraswati Puja</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./know_more.html"
+                  >Know more about Pujo</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown active">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Events
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="./durgotsav.html"
+                  >Oikotan Durgotsav</a
+                >
+                <a class="dropdown-item" href="./picnic.html">Oikotan Picnic</a>
+                <a class="dropdown-item" href="./poilaboishak.html"
+                  >Poila Boishak</a
+                >
+                <!-- <a class="dropdown-item" href="./sportsday.html">Sports Day</a> -->
+                <a class="dropdown-item" href="./holi.html">Holi celebration</a>
+                <a class="dropdown-item" href="./practice.html"
+                  >Fun Agomoni & Natok Practice</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contactUs.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./disha.html">DISHA</a>
+          </li>
+          <!-- Social Media Icons -->
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://www.facebook.com/OikotanHebbal"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="bi bi-facebook"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://www.instagram.com/oikotanhebbal/?hl=en"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="bi bi-instagram"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://www.youtube.com/@OikotanInHebbal"
+              target="_blank"
+              aria-label="YouTube"
+            >
+              <i class="bi bi-youtube"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://maps.app.goo.gl/6czUXna1dh67vpkn9"
+              target="_blank"
+              aria-label="GoogleMaps"
+            >
+              <i class="bi bi-geo-alt-fill"></i>
+            </a>
+          </li>
+
+          <!-- <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li> -->
+          <li class="nav-item dropdown">
+            <button
+              class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
+              id="bd-theme"
+              type="button"
+              aria-expanded="false"
+              data-bs-toggle="dropdown"
+              data-bs-display="static"
+              aria-label="Toggle theme (light)"
+            >
+              <i class="bi bi-brightness-high"></i>
+              <span class="d-lg-none ms-2" id="bd-theme-text"
+                >Toggle theme</span
+              >
+            </button>
+            <ul
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="bd-theme-text"
+            >
+              <li>
+                <button
+                  id="light"
+                  type="button"
+                  class="dropdown-item d-flex align-items-center"
+                  data-bs-theme-value="light"
+                  aria-pressed="true"
+                  onclick="inverter('light')"
+                >
+                  <i class="bi bi-brightness-high"></i>
+                  Light
+                </button>
+              </li>
+              <li>
+                <button
+                  id="dark"
+                  type="button"
+                  class="dropdown-item d-flex align-items-center"
+                  onclick="inverter('dark')"
+                  data-bs-theme-value="dark"
+                  aria-pressed="false"
+                >
+                  <i class="bi bi-moon-stars-fill"></i>
+                  Dark
+                </button>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div
+    class="container text-center text-lg-start col-xxl-8 px-4 py-3 py-lg-5 mt-5 hid"
+  >
+    <div class="row flex-lg-row align-items-center g-5 py-2 py-lg-5">
+      <div class="col-12 col-sm-8 col-lg-6 mx-auto pt-lg-2 pt-5">
+        <img
+          src="./images/bhog.jpg"
+          class="mt-5 mt-lg-2 d-block mx-lg-auto img-fluid"
+          alt="Bootstrap Themes"
+          width="700"
+          height="500"
+          loading="lazy"
+        />
+      </div>
+      <div class="col-lg-6 mt-5">
+        <h1 class="display-5 fw-bold lh-1 text-body-emphasis">
+          Durga Puja Bhog
+        </h1>
+
+        <p class="lead">
+          During the grand festivities of Durga Puja, one of the most cherished
+          traditions is the offering of bhog (sacred food) to the goddess. It is
+          a moment when devotion blends with culinary delight, creating a unique
+          experience that encapsulates the essence of this auspicious occasion.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container text-center text-lg-start hid py-2">
+    <div class="row py-5">
+      <div class="col-lg-10 p-2">
+        <h3 class="text-body-emphasis">Our Bhog Tradition:</h3>
+      </div>
+      <div class="col-lg-10 p-2">
+        <p>
+          At Oikotan Hebbal Durgotsav, the preparation and offering of bhog hold
+          a special place in our hearts. This tradition dates back generations,
+          and it symbolizes our unwavering commitment to preserving our cultural
+          heritage. It's not just a meal; it's a labor of love, a symbol of
+          devotion, and a testament to our unity as a community.
+        </p>
+      </div>
+      <div class="col-lg-10 p-2">
+        <h3 class="text-body-emphasis">The Culinary Delights:</h3>
+      </div>
+      <div class="col-lg-10 p-2">
+        <p>
+          Our Durga Puja bhog is a feast for the senses, featuring a delectable
+          array of dishes that range from traditional to contemporary. From
+          fragrant rice to aromatic curries, our bhog is a culinary journey that
+          celebrates the richness of our culture.
+        </p>
+      </div>
+      <div class="col-lg-10 p-2">
+        <h3 class="text-body-emphasis">Bhog Menu:</h3>
+      </div>
+      <div class="col-lg-10 p-2">
+        <p>
+          Prepare to tantalize your taste buds with a menu that includes:
+          <br /><br />
+          <strong>Khichuri:</strong> A flavorful blend of rice and lentils,
+          cooked to perfection. <br />
+          <strong>Chorchori:</strong> Fresh and vibrant, showcasing the colors
+          of our traditions.<br />
+          <strong>Roshogolla:</strong> Soft, spongy, and soaked in sugar syrup,
+          a Bengali dessert favorite.<br />
+          <strong>Payesh:</strong> A creamy rice pudding, enriched with fragrant
+          cardamom and adorned with nuts.<br />
+          <strong>Chatni:</strong> Tangy and sweet, this chutney adds a burst of
+          flavor to your bhog experience.<br />
+          <strong>Papod:</strong> Crispy, savory snacks that complement the
+          richness of our bhog.<br />
+          <strong>Beguni:</strong> Thin slices of brinjal (eggplant) dipped in
+          gram flour batter and deep-fried to golden perfection, offering a
+          delightful crunch.<br />
+        </p>
+      </div>
+      <div class="col-lg-10 p-2">
+        <h3 class="text-body-emphasis">Preparation and Devotion:</h3>
+      </div>
+      <div class="col-lg-10 p-2">
+        <p>
+          Our bhog is not just about ingredients; it's about the dedication of
+          our volunteers who meticulously prepare each dish with love and
+          devotion. The process is a spiritual journey, and the end result is a
+          divine offering to Goddess Durga.
+        </p>
+      </div>
+      <div class="col-lg-10 p-2">
+        <h3 class="text-body-emphasis">Join Us for Bhog:</h3>
+      </div>
+      <div class="col-lg-10 p-2">
+        <p>
+          We invite all members of our community and visitors to join us in
+          partaking in this sacred tradition. Share in the blessings of Durga
+          Puja by enjoying the bhog with us. You can also volunteer to be part
+          of the preparation process, experiencing the joy of service and
+          devotion firsthand.
+        </p>
+      </div>
+      <div class="col-lg-10 p-2">
+        <h3 class="text-body-emphasis">Contact Information:</h3>
+      </div>
+      <div class="col-lg-10 p-2">
+        <p>
+          For inquiries about Durga Puja bhog or to volunteer for its
+          preparation, please contact us at [Insert Contact Information]. We
+          look forward to sharing this sacred experience with you during our
+          Durga Puja celebrations.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <script src="./index.js"></script>
+  <script
+    src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"
+  ></script>
+
+  <body></body>
+</html>
